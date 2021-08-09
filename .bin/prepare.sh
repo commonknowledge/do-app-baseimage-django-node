@@ -3,6 +3,7 @@ set -e
 apt-get update -y
 apt-get install --yes --quiet --no-install-recommends \
     curl \
+    git \
     build-essential \
     libpq-dev \
     libmariadbclient-dev \
