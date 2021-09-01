@@ -28,6 +28,7 @@ apt-get install --yes --quiet --no-install-recommends \
 
 # Install pip dependencies that are either needed globally, or _very_ expensive to build
 pip install pipenv
-pip install pgmagick
+
+apt get install python3-pgmagick
 
 npm i -g yarn
