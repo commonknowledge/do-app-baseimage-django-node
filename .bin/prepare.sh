@@ -7,7 +7,7 @@ apt-get install --yes --quiet --no-install-recommends \
     build-essential \
     libpq-dev \
     libmariadb-dev \
-    ibmariadb-dev-compat \
+    libmariadb-dev-compat \
     libjpeg62-turbo-dev \
     zlib1g-dev \
     libwebp-dev \
