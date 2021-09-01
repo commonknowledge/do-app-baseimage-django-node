@@ -27,7 +27,7 @@ apt-get install --yes --quiet --no-install-recommends \
     libpoppler-cpp-dev pkg-config python3-dev ghostscript
 
 # Install pip dependencies that are either needed globally, or _very_ expensive to build
-apt-get install python-pgmagick
-pip install pgmagick pipenv
+pip install pipenv
+pip install pgmagick
 
 npm i -g yarn
