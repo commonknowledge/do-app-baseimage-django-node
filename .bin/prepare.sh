@@ -1,6 +1,8 @@
 set -e
 
 apt-get update -y
+
+# Install required packages
 apt-get install --yes --quiet --no-install-recommends \
     curl \
     git \
