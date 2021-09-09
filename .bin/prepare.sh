@@ -1,12 +1,15 @@
 set -e
 
 apt-get update -y
+
+# Install required packages
 apt-get install --yes --quiet --no-install-recommends \
     curl \
     git \
     build-essential \
     libpq-dev \
-    libmariadbclient-dev \
+    libmariadb-dev \
+    libmariadb-dev-compat \
     libjpeg62-turbo-dev \
     zlib1g-dev \
     libwebp-dev \
@@ -24,6 +27,8 @@ apt-get install --yes --quiet --no-install-recommends \
     libpoppler-cpp-dev pkg-config python3-dev ghostscript
 
 # Install pip dependencies that are either needed globally, or _very_ expensive to build
-pip install pgmagick pipenv
+pip install pipenv
+
+apt-get install python3-pgmagick
 
 npm i -g yarn
