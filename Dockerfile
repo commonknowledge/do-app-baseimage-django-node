@@ -1,5 +1,5 @@
 # Use an official Python runtime based on Debian 10 "buster" as a parent image.
-FROM python:3.8.1-slim-buster
+FROM python:3.9-slim-buster
 
 # Add user that will be used in the container.
 RUN useradd app
@@ -35,4 +35,5 @@ USER app
 
 ENV PYTHONUNBUFFERED=1 \
     PATH=/home/app/.local/bin:$PATH \
-    PORT=80
+    PORT=80 \
+    PYTHONPATH=/usr/lib/python3/dist-packages
