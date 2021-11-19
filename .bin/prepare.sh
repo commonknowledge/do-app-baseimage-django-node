@@ -28,7 +28,7 @@ apt-get install --yes --quiet --no-install-recommends \
     python3-pgmagick
 
 # Install pip dependencies that are needed globally
-pip install pipenv
+pip install pipenv poetry
 
 # Install nodejs dependencies that are needed globally
 npm i -g yarn
