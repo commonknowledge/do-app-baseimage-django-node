@@ -6,6 +6,7 @@ Although you could, in theory, just drop install these dependencies in your appl
 
 Includes:
 
+* Pipenv and Poetry package managers
 * Django GID dependencies
 * LTS install of nodejs
 * Yarn
