@@ -1,5 +1,5 @@
-# Use an official Python runtime based on Debian 10 "buster" as a parent image.
-FROM python:3.10-slim-buster
+# Use an official Python runtime based on Debian 12 "bookworm" as a parent image.
+FROM python:3.11-bookworm
 
 # Add user that will be used in the container.
 RUN useradd app
@@ -21,7 +21,7 @@ RUN chown app:app /app
 # Install machine dependencies
 RUN apt-get update
 RUN apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash
 RUN apt-get install -y nodejs
 
 # For selenium headless browser testing
