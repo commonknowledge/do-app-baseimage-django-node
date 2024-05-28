@@ -24,7 +24,7 @@ apt-get install --yes --quiet --no-install-recommends \
     libharfbuzz-dev libfribidi-dev libxcb1-dev \
     python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils tesseract-ocr \
     flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev \
-    libpoppler-cpp-dev pkg-config python3-dev ghostscript \
+    libpoppler-cpp-dev pkg-config python-dev-is-python3 ghostscript \
     python3-pgmagick
 
 # Install pip dependencies that are needed globally
