@@ -15,7 +15,6 @@ apt-get install --yes --quiet --no-install-recommends \
     libwebp-dev \
     binutils \
     libproj-dev \
-    gdal-bin \
     g++ \
     libgraphicsmagick++1-dev \
     libboost-python-dev \

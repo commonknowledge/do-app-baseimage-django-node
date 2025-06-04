@@ -30,6 +30,9 @@ RUN apt-get install -y chromium
 COPY .bin/prepare.sh /app/.bin/prepare.sh
 RUN bash /app/.bin/prepare.sh
 
+COPY .bin/gdal.sh /app/.bin/gdal.sh
+RUN bash /app/.bin/gdal.sh
+
 # Copy the source code of the project into the container.
 RUN mkdir -p /home/app && chown app:app /home/app
 
